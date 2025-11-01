@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CLIMTHER — Travaux Chauffage • Ventilation • Climatisation • Plomberie • Désenfumage</title>
+  <meta name="description" content="CLIMTHER : Spécialiste des études d’exécution et travaux d’installation CVC & Plomberie en Île-de-France. Respect CCTP, qualité et réactivité." />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    :root {
+      --bg:#f8fafc; --bg-2:#ffffff; --card:#ffffff; --muted:#475569; --text:#1e293b; --brand:#00759e; --brand-2:#00bcd4; --ring:#bae6fd;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--text);background:linear-gradient(180deg,var(--bg),var(--bg-2));}
+    a{text-decoration:none;color:var(--brand)}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    header{background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,0.05);position:sticky;top:0;z-index:10;}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+    .logo img{height:40px}
+    nav a{margin:0 12px;font-weight:500;color:#334155}
+    nav a:hover{color:var(--brand)}
+    .cta{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:white;padding:10px 18px;border-radius:999px;font-weight:600;box-shadow:0 6px 16px rgba(0,188,212,0.25)}
+    .ghost{border:1px solid rgba(0,0,0,0.1);padding:10px 16px;border-radius:999px;color:#0f172a}
+
+    .hero{padding:100px 0 60px;background:linear-gradient(135deg,#e0f7fa,#ffffff);text-align:center;}
+    .hero h1{font-size:clamp(32px,6vw,54px);margin-bottom:16px;color:#0f172a}
+    .hero p{max-width:700px;margin:0 auto;color:#334155;font-size:18px}
+    .actions{display:flex;justify-content:center;gap:16px;margin-top:30px;flex-wrap:wrap}
+
+    section{padding:80px 0}
+    h2{font-size:clamp(24px,4vw,36px);text-align:center;margin-bottom:40px;color:#0f172a}
+    .grid{display:grid;gap:20px}
+    .cards{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 4px 16px rgba(0,0,0,0.05);padding:24px;transition:transform .3s ease, box-shadow .3s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.08)}
+    .card h3{color:var(--brand);margin-bottom:12px}
+    .card p{color:#475569;line-height:1.5}
+
+    footer{background:#00759e;color:white;padding:24px 0;text-align:center;margin-top:60px}
+    footer a{color:#bae6fd}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="Accueil CLIMTHER"><img src="logo.jpeg" alt="CLIMTHER — Chauffage Ventilation Climatisation Plomberie"/></a>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#realisations">Références</a>
+        <a href="#contact">Contact</a>
+        <a class="ghost" href="#devis">Devis</a>
+        <a class="cta" href="tel:+33659353395">Appeler</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <img src="logo.jpeg" alt="Logo CLIMTHER" style="height:84px;width:auto;margin:0 auto 18px;display:block"/>
+      <h1>Travaux de Chauffage, Ventilation, Climatisation, Plomberie et Désenfumage</h1>
+      <p>Études d’exécution 2D/3D et travaux d’installation CVC, Plomberie et Désenfumage. Interventions en Île-de-France — projets neufs, réhabilitations et marchés publics.</p>
+      <div class="actions">
+        <a class="cta" href="#devis">Demander un devis</a>
+        <a class="ghost" href="#services">Découvrir nos services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="grid cards">
+        <div class="card"><h3>Études d’exécution 2D / 3D</h3><p>Plans d’exécution (2D/3D), notes de calcul, dimensionnements réseaux, synthèse technique et DOE numérique.</p></div>
+        <div class="card"><h3>Installation CVC / Désenfumage</h3><p>Chauffage, ventilation, climatisation, réseaux aérauliques, régulation, essais et mise en service. Systèmes et volets de désenfumage.</p></div>
+        <div class="card"><h3>Installation Plomberie</h3><p>Réseaux EF/EC, bouclage ECS, évacuations, robinetterie, colonnes montantes, équipements locaux techniques.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <div class="container">
+      <h2>Références récentes</h2>
+      <div class="grid cards">
+        <div class="card"><h3>Résidence Marly-le-Roi</h3><p>Lot CVC/Plomberie complet — 55 logements. Études d’exécution, pose, équilibrage et DOE numérique.</p></div>
+        <div class="card"><h3>École Robillard</h3><p>Extension avec réseaux ECS, ventilation double flux, chaufferie CIAT, essais et mise en service.</p></div>
+        <div class="card"><h3>Bâtiment Achard</h3><p>Réhabilitation 7e étage — études d’exécution, variantes techniques et coordination de chantier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p style="text-align:center">📞 <a href="tel:+33659353395">06 59 35 33 95</a> — ✉️ <a href="mailto:contact@climther.fr">contact@climther.fr</a><br>38 Rue des Mathurins, 75008 Paris</p>
+      <p style="text-align:center;margin-top:10px">Interventions en Île-de-France — Devis sous 24 à 48h</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> CLIMTHER — Études d’exécution & Travaux CVC/Plomberie | <a href="#mentions">Mentions légales</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
