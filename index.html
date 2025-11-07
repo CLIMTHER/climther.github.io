@@ -20,36 +20,51 @@
     img{max-width:100%;height:auto;display:block}
     .container{max-width:1180px;margin:0 auto;padding:0 24px}
 
-    /* Header (mobile-safe) */
+    /* Cache le menu mobile par défaut (PC) */
+    .mobile-menu{display:none}
+
+    /* Header (blanc opaque) */
     header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
     .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
     .logo img{height:80px;width:auto;border-radius:6px}
     nav a{margin:0 14px;font-weight:600;color:#0e1824;opacity:.85}
     nav a:hover{opacity:1;color:var(--brand-2)}
     .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#ffffff;padding:12px 18px;border-radius:999px;font-weight:800;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.04)}
+    .ghost{border:1px solid var(--line);padding:12px 18px;border-radius:999px;background:#fff;color:#0e1824}
     .mobile-toggle{display:none;background:none;border:none;color:#0e1824;font-size:26px}
 
-    /* Menu mobile déroulant simple et fiable */
+    /* Menu & hero — version mobile */
     @media (max-width:900px){
       nav{display:none}
       .mobile-toggle{display:block}
       .logo img{height:56px}
       .mobile-menu{
-        display:none; /* replié par défaut */
+        display:none; /* fermé par défaut */
         flex-direction:column;gap:12px;padding:16px;background:#fff;border-bottom:1px solid var(--line)
       }
       .mobile-menu.open{display:flex}
       .mobile-menu a{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
       .nav{height:64px}
+
+      /* HERO parfaitement centré sur mobile */
+      .hero{padding:56px 0 32px}
+      .hero .container{
+        display:grid;
+        place-items:center;     /* centre H/V */
+        text-align:center;
+        gap:12px;
+      }
+      .hero-logo{height:110px}
+      .hero h1{margin:8px 0}
+      .hero p{margin:0 auto;max-width:90%}
     }
 
-    /* Hero */
+    /* Hero (desktop + base) */
     .hero{padding:86px 0 40px;border-bottom:1px solid var(--line);background:#f7f9fb;text-align:center}
     .hero h1{font-size:clamp(30px,6vw,52px);line-height:1.06;margin:14px 0 14px}
     .hero p{color:var(--muted);max-width:900px;margin:0 auto}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
     .hero-logo{height:160px;width:auto;margin:0 auto 18px;display:block}
-    @media (max-width:600px){.hero-logo{height:110px}}
 
     .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;color:var(--brand);background:#f1f7f9;border:1px solid var(--line);font-weight:600}
 
