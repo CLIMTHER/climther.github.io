@@ -4,6 +4,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://climther.fr/</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,18 +12,21 @@
   <!-- Pages SEO locales -->
   <url>
     <loc>https://climther.fr/paris.html</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://climther.fr/ile-de-france.html</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://climther.fr/zones-intervention.html</loc>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
