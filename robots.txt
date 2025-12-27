@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://climther.fr/sitemap.xml
+Sitemap: https://www.climther.fr/sitemap.xml
