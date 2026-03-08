@@ -4,31 +4,60 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://www.climther.fr/</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Pages métiers -->
+  <url>
+    <loc>https://www.climther.fr/entreprise-cvc-paris.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.climther.fr/entreprise-desenfumage-paris.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.climther.fr/plomberie-sanitaire.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.climther.fr/cvc-logements-collectifs.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Pages SEO locales -->
   <url>
     <loc>https://www.climther.fr/paris.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.climther.fr/ile-de-france.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.climther.fr/zones-intervention.html</loc>
-    <lastmod>2025-12-05</lastmod>
+    <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
