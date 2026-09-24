@@ -1,618 +1,291 @@
-<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="google-site-verification" content="neieZS-hTchYAPP3qYlh0GMIzE3jQA633ptu6FhFgIo" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-  <title>Entreprise CVC, désenfumage et plomberie en Île-de-France – logements collectifs & tertiaire | CLIMTHER</title>
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon.png">
-  <link rel="apple-touch-icon" href="assets/favicon.png">
-  <link rel="canonical" href="https://www.climther.fr/">
-
-<meta name="description" content="Entreprise CVC, désenfumage et plomberie en Île-de-France spécialisée en logements collectifs et bâtiments tertiaires. Installations techniques CVC-Plomberie-Désenfumage pour marchés privés et publics de 200 000 € à 5 000 000 €.">
-
-<meta property="og:title" content="Entreprise CVC, désenfumage et plomberie en Île-de-France | CLIMTHER">
-<meta property="og:description" content="Entreprise CVC & Plomberie spécialisée en logements collectifs et tertiaire. Marchés privés et publics de 200 000 € à 5 000 000 €.">
-
-<meta property="og:url" content="https://www.climther.fr/">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://www.climther.fr/assets/logo-climther-512.png">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Entreprise CVC & Plomberie en Île-de-France | 200K€–5M€">
-<meta name="twitter:description" content="Entreprise spécialisée en logements collectifs et tertiaire. Marchés privés et publics de 200 000 € à 5 000 000 €.">
-<meta name="twitter:image" content="https://www.climther.fr/assets/logo-climther-512.png">
-    <meta name="theme-color" content="#0d3a4a" />
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "CLIMTHER",
-  "image": "https://www.climther.fr/assets/logo-climther-512.png",
-  "url": "https://www.climther.fr/",
-  "telephone": "+33980313795",
-  "email": "contact@climther.fr",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "38 Rue des Mathurins",
-    "addressLocality": "Paris",
-    "postalCode": "75008",
-    "addressCountry": "FR"
-  },
-  "areaServed": {
-    "@type": "AdministrativeArea",
-    "name": "Île-de-France"
-  },
-  "openingHours": "Mo-Fr 08:00-18:00",
-  "makesOffer": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "minPrice": 200000,
-      "maxPrice": 5000000
-    }
-  }
-}
-</script>
-  <style>
-    :root{
-      --bg:#f5f7fa;--surface:#ffffff;--muted:#5b6776;--text:#0e1824;
-      --brand:#0d3a4a;--brand-2:#1f6b7e;--line:#e6ebf0;--ring:#cfe8f1;
-      --accent:#b08d57;--radius:16px;
-      --shadow:0 8px 24px rgba(7,20,31,.06),0 1px 0 rgba(7,20,31,.05) inset
-    }
-
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--text);background:linear-gradient(180deg,#fff,var(--bg))}
-    a{color:inherit;text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .container{max-width:1180px;margin:0 auto;padding:0 24px}
-
-    /* Cache le menu mobile par défaut (PC) */
-    .mobile-menu{display:none}
-
-    /* Header (blanc opaque) */
-    header{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-    .logo img{height:69px;width:auto;border-radius:6px}
-    nav a{margin:0 14px;font-weight:600;color:#0e1824;opacity:.85}
-    nav a:hover{opacity:1;color:var(--brand-2)}
-    .cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#ffffff;padding:12px 18px;border-radius:999px;font-weight:800;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.04)}
-    .ghost{border:1px solid var(--line);padding:12px 18px;border-radius:999px;background:#fff;color:#0e1824}
-    .mobile-toggle{display:none;background:none;border:none;color:#0e1824;font-size:26px}
-
-    /* Menu & hero — version mobile */
-    @media (max-width:900px){
-      nav{display:none}
-      .mobile-toggle{display:block}
-      .logo img{height:56px}
-      .mobile-menu{
-        display:none; /* fermé par défaut */
-        flex-direction:column;gap:12px;padding:16px;background:#fff;border-bottom:1px solid var(--line)
-      }
-      .mobile-menu.open{display:flex}
-      .mobile-menu a{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#fff}
-      .nav{height:64px}
-
-      /* HERO parfaitement centré sur mobile */
-      .hero{padding:56px 0 32px}
-      .hero .container{
-        display:grid;
-        place-items:center;     /* centre H/V */
-        text-align:center;
-        gap:12px;
-      }
-      .hero-logo{height:110px}
-      .hero h1{margin:8px 0}
-      .hero p{margin:0 auto;max-width:90%}
-    }
-
-    /* Hero (desktop + base) */
-    .hero{padding:86px 0 40px;border-bottom:1px solid var(--line);background:#f7f9fb;text-align:center}
-    .hero h1{font-size:clamp(30px,6vw,52px);line-height:1.06;margin:14px 0 14px}
-    .hero p{color:var(--muted);max-width:900px;margin:0 auto}
-    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;justify-content:center}
-    .hero-logo{height:160px;width:auto;margin:0 auto 18px;display:block}
-
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:999px;color:var(--brand);background:#f1f7f9;border:1px solid var(--line);font-weight:600}
-
-    /* Sections & cards */
-    section{padding:72px 0}
-    h2{font-size:clamp(24px,4vw,36px);margin:0 0 26px}
-    .grid{display:grid;gap:18px}
-    .cards{grid-template-columns:repeat(12,1fr)}
-    .card{grid-column:span 4;background:var(--surface);border:1px solid var(--line);border-left:3px solid rgba(13,58,74,.12);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);transition:transform .2s ease, box-shadow .2s ease}
-    .card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(7,20,31,.10)}
-    .card h3{margin:0 0 8px;color:var(--brand)}
-    .subtitle{color:var(--muted);margin:6px 0 0}
-    @media (max-width:900px){.card{grid-column:span 12}}
-
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:30px}
-    .shot{grid-column:span 4;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:var(--shadow)}
-    .shot img{aspect-ratio:16/10;object-fit:cover}
-    @media (max-width:900px){.shot{grid-column:span 12}}
-
-    /* Contact */
-    .contact{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
-    .panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
-    .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .field{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
-    .field input,.field textarea{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;color:#0e1824}
-    .field input:focus,.field textarea:focus{outline:none;box-shadow:0 0 0 4px rgba(31,107,126,.15);border-color:var(--ring)}
-    textarea{min-height:120px;resize:vertical}
-    @media (max-width:900px){.contact{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
-
-    /* Mentions */
-    .mentions{background:linear-gradient(180deg,#0f2d3a,#0d3a4a);color:#e6f1f5;position:relative;overflow:hidden}
-    .mentions:before{content:"";position:absolute;inset:0;background:radial-gradient(1200px 600px at 100% -10%,rgba(255,255,255,.06),transparent 60%),radial-gradient(1000px 500px at -10% 110%,rgba(255,255,255,.05),transparent 60%)}
-    .mentions .wrap{position:relative}
-    .mentions .cards{grid-template-columns:repeat(12,1fr)}
-    .mention-card{grid-column:span 4;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-left:3px solid rgba(176,141,87,.6);border-radius:16px;padding:20px;backdrop-filter:blur(4px)}
-    .mention-card h3{margin:0 0 8px;color:#cfe8f1}
-    .mention-card p{margin:0;color:#d9e7ed}
-    @media (max-width:900px){.mention-card{grid-column:span 12}}
-
-    /* Footer */
-    footer{padding:34px 0;border-top:1px solid var(--line);color:#d6e6ee;background:#0d3a4a}
-
-    /* Petites optimisations mobile */
-    @media (max-width:600px){
-      section{padding:48px 0}
-      .container{padding:0 16px}
-      .actions{gap:10px}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CLIMTHER réalise et pilote les lots CVC, plomberie et désenfumage pour logements collectifs, bâtiments tertiaires et marchés publics en Île-de-France.">
+  <meta name="theme-color" content="#071826">
+  <title>CLIMTHER — Entreprise CVC, plomberie & désenfumage en Île-de-France</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="container nav">
-      <a class="logo" href="#top" aria-label="Accueil CLIMTHER">
-        <img src="assets/logo-climther.png" alt="Logo CLIMTHER" />
-      </a>
-      <nav aria-label="Navigation principale">
+  <div class="noise" aria-hidden="true"></div>
 
-<a href="paris.html">Paris</a>
-
-<a href="ile-de-france.html">Île-de-France</a>
-
-<a href="entreprise-cvc-paris.html">CVC</a>
-
-<a href="entreprise-desenfumage-paris.html">Désenfumage</a>
-
-<a href="plomberie-sanitaire.html">Plomberie</a>
-
-<a href="zones-intervention.html">Zones d’intervention</a>
-
-<a href="#contact">Contact</a>
-
-<a href="#mentions">Mentions</a>
-
-<a class="cta" href="tel:+33980313795">Appeler</a>
-
-</nav>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Ouvrir le menu" aria-controls="mobileMenu" aria-expanded="false">☰</button>
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p><span class="status-dot"></span> Marchés privés & publics · Île-de-France</p>
+      <div class="topbar__links">
+        <a href="tel:+33980313795">09 80 31 37 95</a>
+        <span aria-hidden="true">•</span>
+        <a href="#contact">Transmettre une consultation</a>
+      </div>
     </div>
-    <div class="container mobile-menu" id="mobileMenu" role="menu" aria-label="Menu mobile">
-      <a href="paris.html">Paris</a>
+  </div>
 
-<a href="ile-de-france.html">Île-de-France</a>
+  <header class="site-header" id="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="CLIMTHER, accueil">
+        <span class="brand__mark brand__mark--logo" aria-hidden="true"><img src="assets/climther-logo-clean.png" alt="" width="72" height="72" decoding="async"></span>
+        <span class="brand__text"><strong>CLIMTHER</strong><small>CVC · PLOMBERIE</small></span>
+      </a>
 
-<a href="entreprise-cvc-paris.html">CVC</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
 
-<a href="entreprise-desenfumage-paris.html">Désenfumage</a>
-
-<a href="plomberie-sanitaire.html">Plomberie</a>
-
-<a href="zones-intervention.html">Zones d’intervention</a>
-
-<a href="#contact">Contact</a>
-
-<a href="#mentions">Mentions</a>
-
-<a href="#devis">Demander un devis</a>
-
-<a href="tel:+33980313795">📞 09 80 31 37 95</a>
+      <nav class="main-nav" id="main-menu" aria-label="Navigation principale">
+        <a href="#services">Expertises</a>
+        <a href="#expertise">Organisation</a>
+        <a href="zones-intervention.html">Zones d’intervention</a>
+        <a href="#realisations">Références</a>
+        <a href="#references">Espace Pro</a>
+        <div class="language-switcher" role="group" aria-label="Changer la langue">
+          <button type="button" class="language-switcher__button is-active" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" class="language-switcher__button" data-lang="en" aria-pressed="false">EN</button>
+          <button type="button" class="language-switcher__button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a href="#contact" class="btn btn--nav">Étudier un projet <span>↗</span></a>
+      </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <img class="hero-logo" src="assets/logo-climther.png" alt="Logo CLIMTHER" />
-        <h1>
-Entreprise CVC, désenfumage et plomberie en Île-de-France – réalisation et pilotage d’installations
-</h1>
-<p style="margin-top:10px;font-weight:600;color:#0d3a4a">
-CLIMTHER intervient en tant qu’entreprise titulaire, en groupement ou en sous-traitance pour la réalisation des lots CVC, plomberie et désenfumage.
-</p>
-        
-<p>
-Marchés privés et publics (AO/MAPA) en Île-de-France — Opérations de 200 000 € à 5 000 000 €.
-</p>
-        
-        <div class="badge" style="margin-top:14px">
-        +20 ans d’expérience en réalisation et pilotage d’installations CVC-Plomberie • Opérations jusqu’à 8,5 M€
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media" aria-hidden="true"></div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span> Entreprise CVC–Plomberie · Île-de-France</p>
+          <h1 id="hero-title">Vos installations,<br><em>sous maîtrise.</em></h1>
+          <p class="hero__lead">CLIMTHER réalise et pilote les lots CVC, plomberie et désenfumage pour les logements collectifs, bâtiments tertiaires et équipements publics.</p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn btn--copper">Étudier votre opération <span>↗</span></a>
+            <a href="tel:+33980313795" class="btn btn--ghost"><span class="phone-icon">⌕</span> 09 80 31 37 95</a>
+          </div>
+          <div class="hero__proof">
+            <div class="avatars" aria-hidden="true"><span>C</span><span>V</span><span>C</span><span>P</span></div>
+            <div><div class="stars">+20 ANS D’EXPÉRIENCE</div><p>Opérations de <strong>200 000 € à 5 000 000 €</strong></p></div>
+          </div>
         </div>
-        <div class="actions">
-          <a class="cta" href="#devis">Demander un devis</a>
-          <a class="ghost" href="#refs">Voir nos références</a>
-        </div>
+
+        <aside class="hero-card reveal reveal--delay" aria-label="Engagement de service">
+          <div class="hero-card__top">
+            <span class="hero-card__icon">8,5</span>
+            <span>OPÉRATIONS PILOTÉES</span>
+          </div>
+          <strong>Jusqu’à 8,5 M€</strong>
+          <p>Une expérience confirmée de la préparation technique jusqu’à la réception et au suivi GPA.</p>
+          <a href="#methode">Voir notre organisation <span>→</span></a>
+        </aside>
+      </div>
+      <a href="#services" class="scroll-cue" aria-label="Découvrir nos services"><span></span> Découvrir</a>
+    </section>
+
+    <section class="trust-strip" aria-label="Nos engagements">
+      <div class="container trust-grid">
+        <div><span class="trust-icon">◇</span><p><strong>Marchés privés</strong><small>Promoteurs & entreprises générales</small></p></div>
+        <div><span class="trust-icon">↗</span><p><strong>Marchés publics</strong><small>Réponses MAPA</small></p></div>
+        <div><span class="trust-icon">✓</span><p><strong>RC Pro & Décennale</strong><small>Attestations à jour</small></p></div>
+        <div><span class="trust-icon">◎</span><p><strong>DOE & suivi GPA</strong><small>Réception maîtrisée</small></p></div>
       </div>
     </section>
 
-    <!-- BANDE DE CONFIANCE -->
-    <section style="padding:26px 0;border-bottom:1px solid var(--line);background:#ffffff">
-      <div class="container" style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
-        <div class="badge" style="justify-content:center">Marchés privés</div>
-        <div class="badge" style="justify-content:center">Marchés publics AO/MAPA</div>
-        <div class="badge" style="justify-content:center">Assurances RC Pro / Décennale</div>
-        <div class="badge" style="justify-content:center">Suivi DOE & Garantie de Parfait Achèvement</div>
-      </div>
-    </section>
-<section>
-<div class="container">
-
-<h2>Expérience sur opérations de logements collectifs neufs</h2>
-
-<p class="subtitle">
-Participation à des opérations représentant environ 1000 logements collectifs neufs par an en phase travaux et exécution CVC-Plomberie.
-</p>
-
-<p class="subtitle">
-Le dirigeant de CLIMTHER dispose d’une expérience confirmée dans la réalisation et le pilotage d’installations CVC-Plomberie pour des promoteurs et entreprises générales majeurs.
-</p>
-
-<p class="subtitle">
-Expérience acquise notamment sur des opérations réalisées pour Nexity, Bouygues Immobilier, Eiffage Construction, Fayat, Icade Promotion, Pichet et La Générale de Promotion.
-</p>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2>Typologie d’opérations CVC – plomberie – désenfumage</h2>
-
-<p class="subtitle">
-Logements collectifs neufs • Immeubles de bureaux • ERP (groupes scolaires, équipements publics, hôtels, cinémas) • Grandes et Moyennes Surfaces (GMS) • Résidences étudiantes et résidences services.
-</p>
-
-<p class="subtitle">
-Intervention en installation et pilotage du lot CVC-Plomberie-Désenfumage sur opérations tertiaires et résidentielles en Île-de-France.
-</p>
-
-</div>
-</section>
-
-
-    <!-- SERVICES -->
-    <section id="services">
+    <section class="section services" id="services">
       <div class="container">
-        <h2>Entreprise CVC, désenfumage et plomberie en Île-de-France</h2>
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span></span> Nos expertises</p>
+            <h2>Une maîtrise complète<br>des lots <em>techniques.</em></h2>
+          </div>
+          <p>Études d’exécution, fourniture, installation, coordination, mise en service et réception : CLIMTHER prend en charge l’opération dans sa globalité.</p>
+        </div>
 
-        <p class="subtitle">
-        Entreprise d’installations CVC et plomberie spécialisée dans les logements collectifs, bâtiments tertiaires et marchés publics en Île-de-France (opérations de 200 000 € à 5 000 000 €).
-        </p>
-
-        
-        <div class="grid cards">
-          <article class="card"><h3>
-<a href="entreprise-cvc-paris.html">Installations CVC</a>
-</h3><p class="subtitle">Chaud/froid, CTA, réseaux aérauliques, VMC, VRV/DRV, régulation.</p></article>
-         
-          <article class="card">
-<h3>
-<a href="entreprise-desenfumage-paris.html">Désenfumage</a>
-</h3>
-<p class="subtitle">
-Installations de désenfumage naturel et mécanique : réseaux aérauliques, volets de désenfumage, commandes, essais et mise en service selon réglementation ERP et IGH.
-</p>
-</article>
-          <article class="card"><h3>
-<a href="plomberie-sanitaire.html">Plomberie sanitaire</a>
-</h3><p class="subtitle">EF/EC, ECS bouclée, évacuations, robinetterie, locaux techniques.</p></article>
-          <article class="card"><h3>Mise en service & GPA</h3><p class="subtitle">Essais, équilibrages, PV, DOE numérique, suivi Garantie de Parfait Achèvement.</p></article>
-          <article class="card">
-          <h3>Marchés publics / privés</h3>
-
-          <p class="subtitle">
-          Réponse AO/MAPA, mémoire technique concis, phasage, engagements délais.
-          </p>
-
-          <p class="subtitle" style="margin-top:6px;">
-          Réponse autonome en entreprise titulaire ou en groupement.
-          </p>
-
+        <div class="service-grid">
+          <article class="service-card service-card--featured reveal">
+            <a href="clim.html" aria-label="Découvrir notre expertise CVC">
+              <div class="service-card__number">01</div>
+              <div class="service-card__visual service-card__visual--clim">
+                <svg viewBox="0 0 120 100" aria-hidden="true"><rect x="16" y="18" width="88" height="34" rx="7"/><path d="M25 42h70M42 65c0 10-10 10-10 19M60 62c0 13-10 13-10 24M78 65c0 10 10 10 10 19"/></svg>
+              </div>
+              <div class="service-card__body"><span class="tag">CHAUD / FROID / AIR</span><h3>Installations CVC</h3><p>CTA, réseaux aérauliques, VMC, VRV/DRV, production chaud-froid et régulation.</p><span class="text-link">Explorer l’expertise <b>↗</b></span></div>
+            </a>
           </article>
-          
-          <article class="card"><h3>Coordination & Qualité</h3><p class="subtitle">Réunions, visas, CR, sécurité, propreté chantier, levée des réserves.</p></article>
-          <article class="card">
-<h3>Pilotage technique CVC-Plomberie</h3>
-<p class="subtitle">
-Pilotage technique du lot CVC-Plomberie en phase travaux : coordination des entreprises, suivi d’exécution des installations, réunions de chantier, gestion technique des interfaces et levée des réserves.
-</p>
-</article>
-          <article class="card"><h3>Études d’exécution CVC & Plomberie</h3><p class="subtitle">Plans 2D/3D, schémas hydrauliques et aérauliques, notes de calcul, variantes techniques et optimisation des installations.</p></article>
-          <article class="card">
-<h3>Intervention entreprises générales</h3>
-<p class="subtitle">
-Intervention en entreprise titulaire ou en groupement, avec capacité à mobiliser des équipes travaux en sous-traitance encadrée pour entreprises générales, promoteurs immobiliers et bailleurs sociaux.
-</p>
-<p class="subtitle">
-CLIMTHER s’appuie sur un réseau d’entreprises partenaires qualifiées et d’équipes travaux, permettant d’assurer la réalisation d’opérations en toute capacité et dans le respect des délais.
-</p>
-    <p class="subtitle">
-Organisation adaptée permettant d’assurer la réalisation des installations avec des équipes travaux dimensionnées selon les opérations.
-</p>     
-            
-</article>
+
+          <article class="service-card reveal reveal--delay">
+            <a href="#contact" aria-label="Étudier un projet de désenfumage">
+              <div class="service-card__number">02</div>
+              <div class="service-card__visual service-card__visual--heat">
+                <svg viewBox="0 0 120 100" aria-hidden="true"><path d="M65 13c5 17-8 20-4 34 3-5 8-8 11-14 11 12 17 22 17 34a29 29 0 0 1-58 0c0-14 7-24 18-36 1 10 4 15 8 19 1-16-2-22 8-37Z"/><path d="M59 86c-9-5-12-12-9-20 2-6 7-10 11-16 0 8 8 12 8 21 0 6-4 11-10 15Z"/></svg>
+              </div>
+              <div class="service-card__body"><span class="tag">SÉCURITÉ INCENDIE</span><h3>Désenfumage</h3><p>Systèmes naturels et mécaniques, réseaux, volets, commandes, essais et conformité ERP/IGH.</p><span class="text-link">Étudier le lot <b>↗</b></span></div>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <a href="#contact" aria-label="Étudier un projet de plomberie sanitaire">
+              <div class="service-card__number">03</div>
+              <div class="service-card__visual service-card__visual--plumbing">
+                <svg viewBox="0 0 120 100" aria-hidden="true"><path d="M34 35h28v-8c0-7 6-13 13-13h10M85 14v18M77 32h16M45 35v20M30 55h56M35 55v12c0 12 10 21 25 21s25-9 25-21V55M60 55V43M54 43h12M66 70c0 6-4 10-6 13-2-3-6-7-6-13a6 6 0 0 1 12 0Z"/></svg>
+              </div>
+              <div class="service-card__body"><span class="tag">RÉSEAUX SANITAIRES</span><h3>Plomberie</h3><p>EF/EC, ECS bouclée, évacuations, robinetterie et équipements de locaux techniques.</p><span class="text-link">Confier votre projet <b>↗</b></span></div>
+            </a>
+          </article>
+
+          <article class="service-card reveal reveal--delay">
+            <a href="#contact" aria-label="Confier le pilotage technique d’une opération">
+              <div class="service-card__number">04</div>
+              <div class="service-card__visual service-card__visual--control">
+                <svg viewBox="0 0 120 100" aria-hidden="true"><circle cx="60" cy="18" r="8"/><circle cx="38" cy="48" r="7"/><circle cx="82" cy="48" r="7"/><circle cx="24" cy="78" r="6"/><circle cx="52" cy="78" r="6"/><circle cx="76" cy="78" r="6"/><circle cx="100" cy="78" r="6"/><path d="M60 26v8M60 34 38 41M60 34l22 7M38 55v8M38 63 24 72M38 63l14 9M82 55v8M82 63l-6 9M82 63l18 9M56 18l3 3 6-7"/></svg>
+              </div>
+              <div class="service-card__body"><span class="tag">EXÉCUTION & RÉCEPTION</span><h3>Pilotage technique</h3><p>Études d’exécution, visas, conformité réglementaire, essais, DOE numérique et GPA.</p><span class="text-link">Découvrir l’organisation <b>↗</b></span></div>
+            </a>
+          </article>
         </div>
       </div>
     </section>
-<section>
-<div class="container">
 
-<h2>Organisation des opérations CVC-Plomberie</h2>
-  
-<p class="subtitle" style="margin-bottom:20px;">
-Responsabilité globale du lot CVC-Plomberie : études d’exécution, sélection et fourniture des équipements, approvisionnement, coordination des intervenants et suivi des travaux jusqu’à réception.
-</p>
-  
-<div class="grid cards">
+    <section class="section expertise" id="expertise">
+      <div class="container expertise-grid">
+        <div class="expertise__image reveal">
+          <img src="assets/maintenance-cvc.png" alt="Équipements CVC et hydrauliques pour installations techniques" loading="lazy">
+          <div class="image-badge"><span>20+</span><p>années<br>d’expérience</p></div>
+        </div>
+        <div class="expertise__content reveal reveal--delay">
+          <p class="eyebrow"><span></span> L’organisation CLIMTHER</p>
+          <h2>La responsabilité globale<br>du lot <em>CVC–Plomberie.</em></h2>
+          <p class="large-copy">CLIMTHER intervient en entreprise titulaire, en groupement ou en sous-traitance encadrée, avec une organisation adaptée à chaque opération.</p>
+          <div class="check-list">
+            <div><span>01</span><p><strong>Préparation technique</strong><small>Analyse CCTP, cadre réglementaire, synthèse, études d’exécution et validation des choix techniques.</small></p></div>
+            <div><span>02</span><p><strong>Suivi d’exécution</strong><small>Coordination des équipes, réunions de chantier et gestion des interfaces.</small></p></div>
+            <div><span>03</span><p><strong>Mise en service & réception</strong><small>Essais, équilibrages, PV, DOE numérique et levée des réserves.</small></p></div>
+          </div>
+          <a href="#contact" class="btn btn--dark">Échanger sur une opération <span>↗</span></a>
+        </div>
+      </div>
+    </section>
 
-<article class="card">
-<h3>Préparation technique</h3>
-<p class="subtitle">
-Analyse CCTP, synthèse technique, études d’exécution, validation des choix techniques et préparation des installations avant démarrage des travaux.
-</p>
-</article>
-
-<article class="card">
-<h3>Suivi des travaux</h3>
-<p class="subtitle">
-Coordination des équipes travaux, réunions de chantier, suivi des installations CVC-Plomberie et gestion des interfaces avec les autres lots techniques.
-</p>
-</article>
-
-<article class="card">
-<h3>Mise en service</h3>
-<p class="subtitle">
-Essais, équilibrages, mise en service des installations, DOE numérique et suivi de la Garantie de Parfait Achèvement.
-</p>
-</article>
-
-</div>
-
-</div>
-</section>
-    <!-- ESPACE PRO -->
-    <section id="pro">
+    <section class="section method" id="methode">
       <div class="container">
-        <h2>Espace Pro</h2>
-        <div class="grid cards">
-          <article class="card"><h3>Identité</h3><p>CLIMTHER — SASU au capital de 10 000 € • SIRET 987 905 114 00011 • APE 4322A • 38 Rue des Mathurins, 75008 Paris.</p></article>
-          <article class="card"><h3>Documents & assurances</h3><ul class="subtitle" style="margin:0;padding-left:18px"><li>Attestations RC Pro & Décennale à jour</li><li>Plan de prévention / PPSPS selon besoin</li></ul></article>
-          <article class="card"><h3>Normes & réglementation</h3><p class="subtitle">
-Respect des DTU CVC-Plomberie, IT 246 / IT 247 / IT 263 (désenfumage), RE2020 / RT2012, NF Habitat, HQE, règles de sécurité chantier et procédures de réception des installations techniques.
-</p></article>
+        <div class="section-head section-head--light reveal">
+          <div><p class="eyebrow eyebrow--light"><span></span> Notre méthode</p><h2>Rigoureuse, précise,<br><em>sans surprise.</em></h2></div>
+          <p>Un processus d’exécution structuré et exigeant pour sécuriser les interfaces, les délais et la réception des installations.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal"><span class="step__num">01</span><div class="step__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 10h19l9 9v18"/><path d="M20 10v36h15"/><path d="M39 10v11h11"/><path d="M27 27h14M27 34h9"/><circle cx="43" cy="43" r="8"/><path d="m49 49 7 7"/></svg></div><h3>Visite & cadrage</h3><p>Relevés, interfaces et identification des points CCTP sensibles.</p></article>
+          <article class="step reveal reveal--delay"><span class="step__num">02</span><div class="step__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><rect x="17" y="9" width="30" height="46" rx="4"/><path d="M24 19h16M24 30h6M36 30h5M24 40h6M36 40h5"/><path d="m42 50 9-9 4 4-9 9-6 2 2-6Z"/></svg></div><h3>Offre & préparation</h3><p>Prix détaillés, variantes utiles, calendrier et études d’exécution.</p></article>
+          <article class="step reveal"><span class="step__num">03</span><div class="step__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M45 11c-6-2-13 3-12 10L14 40l10 10 19-19c7 1 12-6 10-12l-7 7-8-8 7-7Z"/><path d="m18 44 6 6"/></svg></div><h3>Exécution</h3><p>Approvisionnements, installation, coordination et comptes rendus.</p></article>
+          <article class="step reveal reveal--delay"><span class="step__num">04</span><div class="step__icon"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M15 39a17 17 0 1 1 34 0"/><path d="M32 39 43 22"/><path d="M18 45h28"/><path d="m22 52 6 6 14-16"/></svg></div><h3>Mise en service</h3><p>Essais, équilibrages, PV, DOE numérique et suivi GPA.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- RÉFÉRENCES -->
-    <section id="refs">
+    <section class="section projects" id="realisations">
       <div class="container">
-        <p style="color:#5b6776;font-style:italic;margin-bottom:18px;">Ces références illustrent l’expérience du dirigeant acquise depuis plus de 20 ans dans la réalisation et le pilotage d’installations CVC-Plomberie sur chantiers tertiaires et logements collectifs.</p>
-        <p class="subtitle" style="margin-bottom:22px;">
-Expérience acquise notamment sur des opérations de logements collectifs réalisées pour des promoteurs et entreprises générales majeurs : 
-<strong>Nexity, Bouygues Immobilier, Eiffage Construction, Icade Promotion, Fayat et Pichet.</strong>
-</p>
-        <h2>Références en installations CVC-Plomberie – tertiaire et logements collectifs</h2>
-<div class="grid cards">
-
-<article class="card">
-<h3>Tertiaire & logements collectifs neufs</h3>
-<p class="subtitle">
-Consultant en génie climatique CVC-Plomberie auprès de Cegelec (Groupe Vinci Energies) — participation à la réalisation et au suivi d’exécution des installations CVC-Plomberie sur projets tertiaires (groupes scolaires, amphithéâtre, gymnase) et programmes de logements collectifs neufs — 2024–2025.
-</p>
-</article>
-
-<article class="card">
-<h3>Logements collectifs neufs — Directeur technique (RPCS)</h3>
-<p class="subtitle">
-Direction technique et pilotage d’installations CVC-Plomberie sur programmes de logements collectifs neufs (environ 1000 logements par an) — coordination des équipes travaux, suivi technique des installations et gestion d’un volume annuel d’opérations d’environ 10 à 15 M€/an — 2018–2024.
-</p>
-</article>
-
-<article class="card">
-<h3>Immeubles de bureaux — Rénovation complète CVCD-Plomberie</h3>
-<p class="subtitle">
-Chef de projet chez SNEF CLIM PIOLINO — rénovation complète des installations CVCD-Plomberie sur immeuble de bureaux — pilotage technique des études et suivi d’exécution des travaux — opération d’environ 8,5 M€ — 2017–2018.
-</p>
-</article>
-
-<article class="card">
-<h3>Immeuble de bureaux — Travaux preneurs CVCD-Plomberie</h3>
-<p class="subtitle">
-Chef de projet chez SNEF CLIM PIOLINO — réalisation des installations CVCD-Plomberie sur immeuble de bureaux — préparation technique, coordination des installations et suivi d’exécution des travaux — opération d’environ 5 M€ — 2015–2016.
-</p>
-</article>
-
-<article class="card">
-<h3>Hôpital Saint-Louis — Service de Mammographie</h3>
-<p class="subtitle">
-Ingénieur CVC-Plomberie chez SNEF CLIM PIOLINO — réalisation des installations CVCD-Plomberie pour le service de mammographie — préparation technique et suivi d’exécution des travaux — opération d’environ 1 M€ — 2015.
-</p>
-</article>
-
-<article class="card">
-<h3>Immeubles de bureaux, théâtres et cinémas — TEMPEOL (Groupe GCC)</h3>
-<p class="subtitle">
-Consultant CVC-Plomberie avec fonctions d’ingénieur — participation à la réalisation et au suivi d’exécution des installations sur opérations tertiaires : immeubles de bureaux, théâtres et cinémas — coordination technique des installations en phase travaux — 2010–2015.
-</p>
-</article>
-
-<article class="card">
-<h3>Bureaux, hôtels et commerces — Johnson Controls</h3>
-<p class="subtitle">
-Consultant CVC-Plomberie — réalisation de chiffrages, plans d'exécution et d’études d’exécution complètes sur projets tertiaires (immeubles de bureaux, hôtels et surfaces commerciales) — préparation technique des installations et coordination avec les équipes travaux — 2006–2010.
-</p>
-</article>
-
-<article class="card">
-<h3>Bâtiments tertiaires — Sauvaget & Cie</h3>
-<p class="subtitle">
-Projeteur confirmé CVC-Plomberie — réalisation de plans d'exécution, d'études d'exécution et participation à la préparation des installations sur bâtiments tertiaires : groupes scolaires, grandes surfaces (GMS), cinémas et hôtels — coordination technique avec les équipes travaux — 2002–2006.
-</p>
-</article>
-
-</div>  
+        <div class="section-head reveal">
+          <div><p class="eyebrow"><span></span> Expérience de référence</p><h2>Des opérations pilotées<br>à grande <em>échelle.</em></h2></div>
+          <a href="#contact" class="text-link text-link--standalone">Présenter une opération <b>↗</b></a>
         </div>
-
-        <div class="gallery">
-          <figure class="shot">
-            <img src="assets/photo-cta-double-flux.png" alt="CTA-Double Flux — Projet tertiaire">
-            <figcaption style="padding:8px 12px;color:#445063">CTA-Double Flux — Projet tertiaire</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/photo-pac-logements-collectifs.png" alt="PAC — Logements collectifs">
-            <figcaption style="padding:8px 12px;color:#445063">PAC — Logements neufs</figcaption>
-          </figure>
-          <figure class="shot">
-            <img src="assets/photo-gainables.png" alt="Gainables — Tertiaire">
-            <figcaption style="padding:8px 12px;color:#445063">Gainables — Tertiaire</figcaption>
-          </figure>
+        <div class="project-showcase reveal">
+          <img src="assets/project-tertiaire.png" alt="Réseaux de gaines et tuyauteries CVC en phase chantier" loading="lazy">
+          <div class="project-info">
+            <p class="project-info__meta">IMMEUBLE DE BUREAUX · EXPÉRIENCE DU DIRIGEANT</p>
+            <h3>Rénovation complète<br>CVCD–Plomberie</h3>
+            <div class="project-stats"><p><strong>8,5 M€</strong><small>Montant d’opération</small></p><p><strong>2017–2018</strong><small>Période</small></p><p><strong>Clé en main</strong><small>Études & exécution</small></p></div>
+          </div>
+        </div>
+        <div class="numbers">
+          <div><strong data-counter="20">0</strong><span>+</span><p>années d’expérience du dirigeant</p></div>
+          <div><strong data-counter="1000">0</strong><span></span><p>logements neufs/an pilotés de 2018 à 2024</p></div>
+          <div><strong data-counter="15">0</strong><span> M€</span><p>de volume annuel piloté au maximum</p></div>
+          <div><strong data-counter="5">0</strong><span> M€</span><p>jusqu’à par opération CLIMTHER</p></div>
         </div>
       </div>
     </section>
 
-    <!-- PROCESS -->
-    <section id="process">
-      <div class="container">
-        <h2>Processus d'intervention</h2>
-        <div class="grid cards" style="grid-template-columns:repeat(12,1fr)">
-          <article class="card" style="grid-column:span 3"><h3>1. Visite & cadrage</h3><p class="subtitle">Relevés, interfaces, points RC/CCTP sensibles.</p></article>
-          <article class="card" style="grid-column:span 3"><h3>2. Offre claire</h3><p class="subtitle">Prix détaillés, variantes utiles, calendrier cible.</p></article>
-          <article class="card" style="grid-column:span 3"><h3>3. Exécution</h3><p class="subtitle">Préparation, approvisionnements, installation, réunions & comptes rendus.</p></article>
-          <article class="card" style="grid-column:span 3"><h3>4. Mise en service</h3><p class="subtitle">Essais, équilibrages, PV, DOE numérique, suivi GPA.</p></article>
-        </div>
-      </div>
-    </section>
-<section>
-<div class="container">
-
-<h2>Entreprise CVC, désenfumage et plomberie en Île-de-France</h2>
-
-<p class="subtitle">
-CLIMTHER est une entreprise d’installation CVC et plomberie intervenant en Île-de-France (Paris, Hauts-de-Seine, Yvelines, Val-de-Marne, Essonne, Seine-et-Marne et Val-d’Oise) pour la réalisation d’installations sur logements collectifs, bâtiments tertiaires et équipements publics.
-</p>
-
-<p class="subtitle">
-L’entreprise réalise des installations de chauffage, ventilation, climatisation, désenfumage et plomberie sanitaire sur opérations de 200 000 € à 5 000 000 €, en marchés privés et marchés publics.
-</p>
-
-</div>
-</section>
-    <!-- CONTACT / DEVIS -->
-    <section id="contact">
-      <div class="container contact">
-        <div class="panel">
-          <h2>Contact</h2>
-          <p>CLIMTHER<br/>38 Rue des Mathurins – 75008 Paris</p>
-          <p>📞 <a href="tel:+33980313795">09 80 31 37 95</a><br/>✉️ <a href="mailto:contact@climther.fr">contact@climther.fr</a></p>
-          <p>Île-de-France</p>
-          <div class="badge" style="margin-top:10px">Lun–Ven 8h00–18h00</div>
-        </div>
-        <div id="devis" class="panel">
-          <h2>Demande de devis</h2>
-          <form id="quoteForm" onsubmit="return handleSubmit(event)">
-            <div class="row">
-              <div class="field"><label for="nom">Nom / Société</label><input id="nom" name="nom" required placeholder="Ex. CLIMTHER"></div>
-              <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" required placeholder="vous@exemple.fr"></div>
+    <section class="section testimonials" id="references">
+      <div class="container testimonials-grid">
+        <div class="testimonial-title reveal">
+          <p class="eyebrow"><span></span> Parcours & références</p>
+          <h2>Une expérience acquise<br>sur des projets <em>exigeants.</em></h2>
+          <div class="rating-card">
+            <strong>+</strong>
+            <div>
+              <div class="stars">TYPOLOGIES MAÎTRISÉES</div>
+              <p>Exemples d’opérations prises en charge, selon le contexte technique et réglementaire.</p>
+              <ul class="typology-list">
+                <li><strong>Logements</strong><span>collectifs neufs</span></li>
+                <li><strong>Bureaux</strong><span>tertiaire</span></li>
+                <li><strong>ERP</strong><span>public accueilli</span></li>
+                <li><strong>Hôtels</strong><span>exploitation continue</span></li>
+                <li><strong>GMS</strong><span>grandes surfaces</span></li>
+                <li><strong>Théâtres</strong><span>contraintes publiques</span></li>
+                <li><strong>Cinémas</strong><span>confort & sécurité</span></li>
+                <li><strong>Et plus encore</strong><span>selon étude du projet</span></li>
+              </ul>
             </div>
-            <div class="row">
-              <div class="field"><label for="tel">Téléphone</label><input id="tel" name="tel" placeholder="09 80 31 37 95"></div>
-              <div class="field"><label for="type">Type de besoin</label><input id="type" name="type" placeholder="CVC, Plomberie, Désenfumage…"></div>
-            </div>
-            <div class="field"><label for="message">Détails du projet</label><textarea id="message" name="message" placeholder="Décrivez votre besoin, délais, localisation…"></textarea></div>
-            <button class="cta" type="submit">Envoyer la demande</button>
-          </form>
-          <p id="formStatus" role="status" style="margin-top:10px;color:#1f6b7e"></p>
+          </div>
+        </div>
+        <div class="quote-slider reveal reveal--delay" aria-live="polite">
+          <article class="quote is-active"><span class="quote-mark">01</span><h3 class="quote-title">Tertiaire & logements collectifs neufs</h3><blockquote>Consultant en génie climatique CVC-Plomberie auprès de Cegelec (Groupe Vinci Energies) — participation à la réalisation et au suivi d’exécution des installations CVC-Plomberie sur projets tertiaires et programmes de logements collectifs neufs.</blockquote><footer><span>CE</span><p><strong>Cegelec · Vinci Energies</strong><small>Consultant génie climatique · 2024–2025</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">02</span><h3 class="quote-title">Logements collectifs neufs — Directeur technique</h3><blockquote>Direction technique et pilotage d’installations CVC-Plomberie sur programmes de logements collectifs neufs, environ 1 000 logements par an, coordination des équipes travaux et gestion d’un volume annuel d’environ 10 à 15 M€.</blockquote><footer><span>DT</span><p><strong>Logements collectifs neufs · RPCS</strong><small>Directeur technique · 2018–2024</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">03</span><h3 class="quote-title">Immeubles de bureaux — Rénovation complète</h3><blockquote>Chef de projet chez SNEF CLIM PIOLINO — rénovation complète des installations CVCD-Plomberie sur immeuble de bureaux, pilotage technique des études et suivi d’exécution des travaux, opération d’environ 8,5 M€.</blockquote><footer><span>SP</span><p><strong>SNEF CLIM PIOLINO</strong><small>Chef de projet · 2017–2018</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">04</span><h3 class="quote-title">Immeuble de bureaux — Travaux preneurs</h3><blockquote>Chef de projet chez SNEF CLIM PIOLINO — réalisation des installations CVCD-Plomberie sur immeuble de bureaux, préparation technique, coordination des installations et suivi d’exécution des travaux, opération d’environ 5 M€.</blockquote><footer><span>SP</span><p><strong>SNEF CLIM PIOLINO</strong><small>Chef de projet · 2015–2016</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">05</span><h3 class="quote-title">Hôpital Saint-Louis — Mammographie</h3><blockquote>Ingénieur CVC-Plomberie chez SNEF CLIM PIOLINO — réalisation des installations CVCD-Plomberie pour le service de mammographie, préparation technique et suivi d’exécution des travaux, opération d’environ 1 M€.</blockquote><footer><span>SP</span><p><strong>Hôpital Saint-Louis · SNEF CLIM PIOLINO</strong><small>Ingénieur CVC-Plomberie · 2015</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">06</span><h3 class="quote-title">Immeubles de bureaux, théâtres et cinémas</h3><blockquote>Consultant CVC-Plomberie chez TEMPEOL (Groupe GCC) — participation à la réalisation et au suivi d’exécution des installations sur opérations tertiaires, avec coordination technique en phase travaux.</blockquote><footer><span>TP</span><p><strong>TEMPEOL · Groupe GCC</strong><small>Consultant CVC-Plomberie · 2010–2015</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">07</span><h3 class="quote-title">Bureaux, hôtels et commerces</h3><blockquote>Consultant CVC-Plomberie chez Johnson Controls — chiffrages, plans d’exécution et études d’exécution complètes sur projets tertiaires, préparation technique des installations et coordination avec les équipes travaux.</blockquote><footer><span>JC</span><p><strong>Johnson Controls</strong><small>Consultant CVC-Plomberie · 2006–2010</small></p></footer></article>
+          <article class="quote"><span class="quote-mark">08</span><h3 class="quote-title">Bâtiments tertiaires — Sauvaget & Cie</h3><blockquote>Projeteur confirmé CVC-Plomberie — plans d’exécution, études d’exécution et préparation des installations sur groupes scolaires, grandes surfaces, cinémas et hôtels, avec coordination technique des équipes travaux.</blockquote><footer><span>SC</span><p><strong>Sauvaget & Cie</strong><small>Projeteur confirmé CVC-Plomberie · 2002–2006</small></p></footer></article>
+          <div class="slider-controls"><button type="button" data-dir="-1" aria-label="Référence précédente">←</button><div class="slider-dots"><button class="is-active" aria-label="Référence 1"></button><button aria-label="Référence 2"></button><button aria-label="Référence 3"></button><button aria-label="Référence 4"></button><button aria-label="Référence 5"></button><button aria-label="Référence 6"></button><button aria-label="Référence 7"></button><button aria-label="Référence 8"></button></div><button type="button" data-dir="1" aria-label="Référence suivante">→</button></div>
         </div>
       </div>
     </section>
 
-    <!-- MENTIONS -->
-    <section id="mentions" class="mentions">
-      <div class="container wrap">
-        <h2 style="color:#e6f1f5;margin:0 0 22px">Mentions légales & RGPD</h2>
-        <div class="grid cards">
-          <article class="mention-card">
-            <h3>Éditeur</h3>
-            <p>CLIMTHER SASU — Capital 10 000 € — SIRET 987 905 114 00011 — APE 4322A<br/>38 Rue des Mathurins, 75008 Paris — <a href="mailto:contact@climther.fr" style="color:#fff;text-decoration:underline">contact@climther.fr</a> — <a href="tel:+33980313795" style="color:#fff;text-decoration:underline">09 80 31 37 95</a></p>
-          </article>
-          <article class="mention-card">
-            <h3>Données personnelles</h3>
-            <p>Le formulaire ouvre votre messagerie (mailto) et n’enregistre aucune donnée sur ce site. Vos informations servent uniquement à traiter votre demande.</p>
-          </article>
-          <article class="mention-card">
-            <h3>Propriété intellectuelle</h3>
-            <p>© <span id="year-mentions"></span> CLIMTHER. Tous droits réservés.</p>
-          </article>
+    <section class="section faq-section">
+      <div class="container faq-grid">
+        <div class="reveal"><p class="eyebrow"><span></span> Questions fréquentes</p><h2>Un partenaire adapté<br>à votre <em>opération.</em></h2><p>Consultez-nous dès la phase de consultation MAPA ou de préparation technique.</p><a href="tel:+33980313795" class="text-link text-link--standalone">09 80 31 37 95 <b>↗</b></a></div>
+        <div class="faq reveal reveal--delay">
+          <details open><summary>Sur quels types d’opérations intervenez-vous ?<span>+</span></summary><p>CLIMTHER intervient sur les logements collectifs neufs, immeubles de bureaux, ERP, groupes scolaires, hôtels, cinémas, GMS et résidences services.</p></details>
+          <details><summary>Travaillez-vous sur les marchés publics ?<span>+</span></summary><p>Oui. L’entreprise répond aux consultations MAPA, en entreprise titulaire ou en groupement, avec mémoire technique, phasage et engagements de délais.</p></details>
+          <details><summary>Quelle est votre zone d’intervention ?<span>+</span></summary><p>Paris et l’Île-de-France : Hauts-de-Seine, Yvelines, Val-de-Marne, Essonne, Seine-et-Marne et Val-d’Oise. Consultez la page <a href="zones-intervention.html">zones d’intervention</a> pour le détail des communes.</p></details>
+          <details><summary>Quels documents fournissez-vous à la réception ?<span>+</span></summary><p>Essais, équilibrages, procès-verbaux, DOE numérique, levée des réserves et suivi de la Garantie de Parfait Achèvement.</p></details>
         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span> Consultation MAPA</p>
+          <h2>Parlons de votre<br><em>opération.</em></h2>
+          <p>Transmettez-nous le contexte, la typologie et le calendrier de votre projet. Notre équipe étudie votre consultation.</p>
+          <div class="contact-details"><a href="tel:+33980313795"><span>↗</span><p><small>APPELEZ-NOUS</small><strong>09 80 31 37 95</strong></p></a><a href="mailto:contact@climther.fr"><span>✉</span><p><small>ÉCRIVEZ-NOUS</small><strong>contact@climther.fr</strong></p></a></div>
+        </div>
+        <form class="contact-form reveal reveal--delay" id="quote-form">
+          <div class="form-head"><p><strong>Demande de consultation</strong><small>Marchés privés et publics</small></p><span>01</span></div>
+          <div class="form-row"><label>Nom / Société<input type="text" name="name" placeholder="Entreprise / interlocuteur" required></label><label>Votre téléphone<input type="tel" name="phone" placeholder="01 00 00 00 00" required></label></div>
+          <div class="form-row"><label>Votre e-mail<input type="email" name="email" placeholder="contact@entreprise.fr" required></label><label>Type de besoin<select name="service" required><option value="">Sélectionner</option><option>Lot CVC</option><option>Lot Plomberie</option><option>Désenfumage</option><option>Pilotage technique</option><option>MAPA</option></select></label></div>
+          <label>Détails du projet<textarea name="message" rows="4" placeholder="Typologie, localisation, montant, calendrier, documents disponibles…"></textarea></label>
+          <label class="checkbox"><input type="checkbox" required><span>J’accepte d’être recontacté dans le cadre de ma demande.</span></label>
+          <button class="btn btn--copper btn--full" type="submit">Préparer mon e-mail <span>↗</span></button>
+          <p class="form-status" role="status"></p>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer>
-    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
-      <small>© <span id="year"></span> CLIMTHER — Travaux CVC • Plomberie • Désenfumage</small>
-      <small><a href="#top" style="color:#d6e6ee">Haut de page ↑</a></small>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="brand brand--footer"><span class="brand__mark brand__mark--logo" aria-hidden="true"><img src="assets/climther-logo-clean.png" alt="" width="72" height="72" decoding="async"></span><span class="brand__text"><strong>CLIMTHER</strong><small>CVC · PLOMBERIE</small></span></a><p>Installation et pilotage CVC, plomberie et désenfumage en Île-de-France.</p></div>
+      <div><h3>Expertises</h3><a href="clim.html">Installations CVC</a><a href="#services">Désenfumage</a><a href="#services">Plomberie</a><a href="#expertise">Pilotage technique</a></div>
+      <div><h3>Entreprise</h3><a href="#expertise">Organisation</a><a href="#methode">Processus</a><a href="#realisations">Références</a><a href="#references">Espace Pro</a><a href="zones-intervention.html">Zones d’intervention</a></div>
+      <div id="mentions"><h3>Contact</h3><a href="tel:+33980313795">09 80 31 37 95</a><a href="mailto:contact@climther.fr">contact@climther.fr</a><p>38 rue des Mathurins<br>75008 Paris<br>Lun–Ven · 8h–18h</p></div>
     </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> CLIMTHER · SASU au capital de 10 000 € · SIRET 987 905 114 00011.</p><div><a href="#mentions">Mentions légales</a><a href="#contact">Confidentialité</a></div><a href="#" class="back-top" aria-label="Retour en haut">↑</a></div>
   </footer>
 
-  <script>
-    // Années auto (sécurisé si éléments absents)
-    (function(){
-      const y=new Date().getFullYear();
-      const y1=document.getElementById('year'); if(y1) y1.textContent=y;
-      const ym=document.getElementById('year-mentions'); if(ym) ym.textContent=y;
-    })();
-
-    // Menu mobile : toggle + fermeture automatique
-    (function(){
-      const btn=document.getElementById('mobileToggle');
-      const menu=document.getElementById('mobileMenu');
-      if(!btn || !menu) return;
-      const setOpen=o=>{ menu.classList.toggle('open',!!o); btn.setAttribute('aria-expanded',!!o); };
-      btn.addEventListener('click',()=>setOpen(!menu.classList.contains('open')));
-      menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
-      document.addEventListener('click',(e)=>{
-        if(!menu.classList.contains('open')) return;
-        if(!menu.contains(e.target) && !btn.contains(e.target)) setOpen(false);
-      });
-      document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') setOpen(false); });
-    })();
-
-    // Envoi devis via mailto
-    function handleSubmit(e){
-      e.preventDefault();
-      const data=new FormData(e.target);
-      const mailto=`mailto:contact@climther.fr?subject=Demande%20de%20devis%20depuis%20le%20site&body=${encodeURIComponent(
-        `Nom/Société: ${data.get('nom')}\nEmail: ${data.get('email')}\nTéléphone: ${data.get('tel')||''}\nType: ${data.get('type')||''}\n\nDétails:\n${data.get('message')||''}`
-      )}`;
-      window.location.href=mailto;
-      const st=document.getElementById('formStatus');
-      if(st) st.textContent="Merci ! Votre messagerie va s'ouvrir pour envoyer le message.";
-      e.target.reset();
-      return false;
-    }
-  </script>
+  <a class="floating-call" href="tel:+33980313795" aria-label="Appeler CLIMTHER"><span>☎</span><p><small>Une consultation ?</small><strong>09 80 31 37 95</strong></p></a>
 </body>
 </html>
